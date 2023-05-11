@@ -27,11 +27,17 @@
 }
 
 .font-large {
-    font-size: 54px !important;
+    font-size: 3rem !important;
 }
 
 .font-medium {
-    font-size: 38px !important;
+    font-size: 2rem !important;
+}
+
+.title {
+    font-family: "DM Serif Display", display;
+    color: #121212;
+    margin-bottom: .5rem;
 }
 
 #hero .flex {
@@ -41,11 +47,8 @@
     overflow: hidden;
 }
 
-.title {
-    font-family: "DM Serif Display", display;
-    font-size: 52px;
-    color: #121212;
-    margin-bottom: 15px;
+#hero .column {
+    justify-content: space-around;
 }
 
 #hero .title {
@@ -86,8 +89,9 @@
 
 .btn span {
     display: block;
-    font-family: "Lexend", sans-serif;
-    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
     text-align: center;
     color: #FFF;
 }
@@ -121,7 +125,7 @@
 
 #about_us .title {
     color:rgb(44, 84, 153);
-    margin: 15px 0;
+    margin: 1rem 0;
 }
 
 #about_us .content {
@@ -136,17 +140,7 @@
     padding: 5vh 0;
     justify-content: center;
     align-items: center;
-}
-
-#advantages .title {
-    align-self: center;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 25px;
-}
-
-#advantages {
-    margin-top: 10vh;
+    margin-top: 4vh;
 }
 
 #advantages .flex {
@@ -156,6 +150,13 @@
 
 #advantages .column {
     width: 25%;
+}
+
+#advantages .title {
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 .card {
@@ -169,11 +170,15 @@
     margin: 25px 0px;
 }
 
+.card-illustration {
+    margin-bottom: 1rem;
+}
+
 .card-header {
-    font-family: "Lexend", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: .5rem;
 }
 
 .card-content {
@@ -212,15 +217,17 @@
     
     #hero__btn {
         align-self: center;
+        position: absolute;
+        bottom: 2rem;
     }
 
     .btn {
-        padding: 10px 15px;
+        padding: 1rem 1.2rem;
         max-width: 80vw;
     }
 
     .btn span {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     #hero__video {
