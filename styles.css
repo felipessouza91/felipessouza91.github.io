@@ -8,24 +8,6 @@
     background: linear-gradient(45deg, #5fa6d5, #3be0ac);
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.center {
-    text-align: center;
-}
-
 .font-large {
     font-size: 3rem !important;
 }
@@ -40,19 +22,35 @@
     margin-bottom: .5rem;
 }
 
-#hero .flex {
-    height: 100vh;
-    width: 100vw; 
+#hero {
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F5F5F5;
     overflow: hidden;
+
 }
 
-#hero .column {
-    justify-content: space-around;
+#hero__video {
+    height: 80vh;
+    width: 100%;
+    padding: 1rem;
 }
 
-#hero .title {
-    max-width: 35vw;
+#hero__text {
+    padding: 1rem;
+    margin-bottom: 2vh;
+}
+
+#hero__btn .btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    color: #FFF;
+    background-color: #9763f6;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    box-shadow:0px 5px 8px rgb(0, 0, 0, .2);
 }
 
 .slide {
@@ -62,61 +60,23 @@
 }
 
 @keyframes slide-in-anim {
-	100% {
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-    
-#hero__video {
-   width: 50vw; 
-   height: 60vh; 
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
-#hero__btn {
-    align-self: flex-start;
-}
-
-.btn {
-    display: block;
-    text-decoration: none;
-    background-color: #9763f6;
-    border-radius: 50px;
-    box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.2);
-    padding: 20px 25px;
-    margin: auto;
-}
-
-.btn span {
-    display: block;
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    font-size: 1rem;
-    text-align: center;
-    color: #FFF;
-}
-
-#about_us {
-    justify-content: center;
-    align-items: space-between;
-    margin: auto;
-    padding: 5vh 10vw;
-}
-
-.logo {
-    width: 150px;
-    height: 150px;
+#about_us .logo {
+    width: 200px;
+    height: 200px;
     align-self: center;
-    margin: 25px 0;
+    margin: 1.5rem 0;
 }
 
-.logo img {
-    width: 100%;
-    height: 100%;
-}
-
-#about_us {
-    width: 80vw;
+#about_us .logo > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
 }
 
 #about_us .title, #about_us .content {
@@ -130,26 +90,12 @@
 
 #about_us .content {
     font-family: "Poppins", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 100;
 }
 
 #advantages {
-    width: 80vw;
-    margin: auto;
-    padding: 5vh 0;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vh;
-}
-
-#advantages .flex {
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-#advantages .column {
-    width: 25%;
+    margin-top: 5vh;
 }
 
 #advantages .title {
@@ -159,7 +105,7 @@
     margin-bottom: 25px;
 }
 
-.card {
+#advantages .card {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -168,39 +114,25 @@
     align-self: center;
     /* background-color: #CCC; */
     margin: 25px 0px;
+    border: none;
 }
 
-.card-illustration {
+#advantages .card-illustration {
     margin-bottom: 1rem;
 }
 
-.card-header {
+#advantages .card-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    text-align: center;
-    margin-bottom: .5rem;
 }
 
-.card-content {
+#advantages .card-text {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     font-weight: 100;
 }
 
 @media only screen and (max-width: 600px) {
-
-    .flex {
-        flex-direction: column;
-    }
-
-    .column {
-        align-items: center;
-    }
-
-    .title {
-        text-align: center !important;
-        max-width: 95vw !important;
-        margin: 5px 0;
-    }
 
     .font-large {
         font-size: 2.4rem !important;
@@ -209,32 +141,19 @@
     .font-medium {
         font-size: 1.8rem !important;
     }
-    
-    #hero .flex {
-        padding: 0;
-        justify-content: center;
-    }
-    
-    #hero__btn {
-        align-self: center;
-        position: absolute;
-        bottom: 2rem;
-    }
 
-    .btn {
-        padding: 1rem 1.2rem;
-        max-width: 80vw;
-    }
-
-    .btn span {
-        font-size: 1rem;
+    #hero {
+        align-items: flex-start;
+        text-align: center;
     }
 
     #hero__video {
-        width: 100vw;
-        height: auto;
-        position: absolute;
-        top: 0;
+        height: 25vh;
+        width: 100%;
+    }
+
+    #hero__text {
+        padding: 1.3rem;
     }
 
     #about_us {
@@ -243,12 +162,6 @@
 
     #about_us .content {
         font-size: 1.2rem;
-    }
-
-    #advantages .column {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
 }
