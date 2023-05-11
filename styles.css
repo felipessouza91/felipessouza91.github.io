@@ -4,10 +4,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-section {
-    margin: 20vh 0;
-}
-
 .gradient-background {
     background: linear-gradient(45deg, #5fa6d5, #3be0ac);
 }
@@ -71,6 +67,10 @@ section {
     }
 }
 
+#about_us {
+    margin: 5vh auto;
+}
+
 #about_us .logo {
     width: 200px;
     height: 200px;
@@ -98,11 +98,25 @@ section {
     font-weight: 100;
 }
 
+#about_us .carousel-indicators {
+    transform: translateY(100%);
+}
+#about_us .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color:rgb(0, 0, 0, 1);
+    border-radius: 100%;      
+}
+
+#advantages {
+    margin: 20vh auto;
+}
+
 #advantages .title {
     align-self: center;
     text-align: center;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 #advantages .card {
