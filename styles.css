@@ -140,11 +140,7 @@
 #advantages .card-text {
     font-family: "Poppins", sans-serif !important;
     text-align: center;
-<<<<<<< HEAD
-    font-weight: 200;
-=======
-    font-weight: 200 !important;
->>>>>>> update
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 600px) {
