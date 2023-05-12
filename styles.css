@@ -151,7 +151,7 @@
 }
 
 #advantages .card-title {
-    font-family: "Fira Code", mono;
+    font-family: "Fira Code", "Roboto", sans-serif;
     font-weight: 500 !important;
     font-size: 1rem;
 }
