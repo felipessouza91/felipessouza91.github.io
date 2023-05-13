@@ -15,18 +15,20 @@
     src: url("./assets/fonts/Metropolis-Ligh.otf");
 }
 
-
+:root {
+    --main-font: "Poppins", sans-serif;
+    --title-font: "Metropolis-SemiBold", sans-serif;
+    --button-font: "Roboto", sans-serif;
+}  
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
 }
 
 .gradient-background {
-    background: linear-gradient(45deg, #5fa6d5, #3be0ac);
+    background: linear-gradient(45deg, #5b0296, #02eda3);
 }
-
 
 .font-large {
     font-size: 3rem !important;
@@ -37,46 +39,77 @@
 }
 
 .title {
-    font-family: "Metropolis-SemiBold", sans-serif;
+    font-family: var(--title-font);
     color: #121212;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 #hero {
-    height: 100vh !important;
+    min-height: 100vh !important;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #F5F5F5;
     overflow: hidden;
     margin: 0 !important;
+    position: relative;
 }
 
 #hero__video {
-    height: 100%;
     width: 100%;
-    padding: 1rem;
+    height: 100%;
+    padding: .5rem;
+    margin: auto;
+    position: relative;
+    z-index: 999;
 }
 
 #hero__text {
-    padding: 1rem;
-    margin-bottom: 2vh;
+    /* padding: 1rem; */
+    margin-bottom: 3vh;
+    position: relative;
+}
+
+#hero__text .title {
+    color: #FFF;
 }
 
 #hero__btn .btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
+    font-family: var(--button-font);
+    font-weight: 300;
     color: #FFF;
     background-color: #9763f6;
     border-radius: 50px;
     padding: 1rem 2rem;
     box-shadow:0px 5px 8px rgb(0, 0, 0, .2);
+    position: relative;
 }
 
 .slide {
     transform: translateX(100%);
     animation: slide-in-anim 1s ease-out forwards;
     opacity: 0;
+}
+
+.custom-shape-divider-bottom-1683985866 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.custom-shape-divider-bottom-1683985866 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1683985866 .shape-fill {
+    fill: #FFFFFF;
 }
 
 @keyframes slide-in-anim {
@@ -112,8 +145,8 @@
 }
 
 #about_us .content {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
+    font-family: var(--main-font);
+    font-size: 1.1rem;
     font-weight: 200;
 }
 
@@ -152,14 +185,14 @@
 
 #advantages .card-title {
     font-family: "Fira Code", "Roboto", sans-serif;
-    font-weight: 500 !important;
-    font-size: 1rem;
+    font-weight: 700 !important;
+    font-size: 1.1rem;
 }
 
 #advantages .card-text {
-    font-family: "Poppins", sans-serif !important;
+    font-family: var(--main-font);
     text-align: center;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 600px) {
