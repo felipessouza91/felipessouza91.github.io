@@ -187,7 +187,7 @@
 }
 
 #advantages .card-title {
-    font-family: "Fira Code", sans-serif !important;
+    font-family: var(--title-font);
     font-weight: 500 !important;
     color: var(--title-color);
     font-size: 1.1rem;
