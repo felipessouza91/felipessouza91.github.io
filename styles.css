@@ -46,6 +46,13 @@
     margin-bottom: 1rem;
 }
 
+.gradient {
+    background: linear-gradient(45deg,  #5b0296, #02eda3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #hero {
     min-height: 100vh !important;
     display: flex;
@@ -72,7 +79,7 @@
 }
 
 #hero__text .title {
-    color: #FFF;
+    color: #FFF !important;
 }
 
 .btn {
