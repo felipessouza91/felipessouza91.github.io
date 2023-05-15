@@ -19,6 +19,8 @@
     --main-font: "Poppins", sans-serif;
     --title-font: "Metropolis-SemiBold", sans-serif;
     --button-font: "Roboto", sans-serif;
+    --main-color: #FFF;
+    --title-color: rgb(44, 84, 153);
 }  
 
 * {
@@ -40,7 +42,7 @@
 
 .title {
     font-family: var(--title-font);
-    color: #121212;
+    color: var(--title-color);
     margin-bottom: 1rem;
 }
 
@@ -73,7 +75,7 @@
     color: #FFF;
 }
 
-#hero__btn .btn {
+.btn {
     font-family: var(--button-font);
     font-weight: 300;
     color: #FFF;
@@ -140,7 +142,6 @@
 }
 
 #about_us .title {
-    color:rgb(44, 84, 153);
     margin: 1rem 0;
 }
 
@@ -161,7 +162,10 @@
 }
 
 #advantages {
-    margin: 20vh auto;
+    margin: 10vh auto;
+    padding: 10vh 0;
+    background-color: #FCFCFC;
+    overflow: hidden;
 }
 
 #advantages .title {
@@ -174,25 +178,28 @@
 #advantages .card {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    /* background-color: #CCC; */
-    margin: 25px 0px;
+    background: transparent;
     border: none;
+    padding: 1rem;
 }
 
 #advantages .card-title {
-    font-family: "Fira Code", "Roboto", sans-serif;
-    font-weight: 700 !important;
+    font-family: "Fira Code", sans-serif !important;
+    font-weight: 500 !important;
+    color: var(--title-color);
     font-size: 1.1rem;
 }
 
 #advantages .card-text {
     font-family: var(--main-font);
-    text-align: center;
     font-weight: 200;
+}
+
+#call_to_action {
+    margin: 5vh auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -221,6 +228,11 @@
 
     #about_us .content {
         font-size: 1.2rem;
+    }
+
+    #advantages .card {
+        flex-direction: column;
+        text-align: center;
     }
 
 }
