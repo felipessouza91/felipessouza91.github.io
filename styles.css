@@ -17,7 +17,7 @@
 
 :root {
     --main-font: "Poppins", sans-serif;
-    --title-font: "Metropolis-SemiBold", sans-serif;
+    --title-font: "Metropolis-SemiBold", "DM Sans", sans-serif;
     --button-font: "Roboto", sans-serif;
     --main-color: #FFF;
     --title-color: rgb(44, 84, 153);

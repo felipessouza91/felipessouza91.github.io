@@ -1,3 +1,16 @@
+<?php
+    var_dump($_POST);
+
+
+    // if(!empty($_POST["user_code"])) {
+    //     $user_code = $_POST["user_code"];
+    //     $link = "https://painel-empresa.cartaomeucashback.com.br?page=sign-up2&cod=";
+    //     $link .= $user_code;
+    // } else {
+    //     $link = "https://google.com";
+    // }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,6 +27,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
         <link href="./styles.css" rel="stylesheet">
@@ -48,7 +62,7 @@
                     </div>
 
                     <div id="hero__btn">
-                        <a class="btn" href="#">
+                        <a class="btn" href="<?= $link; ?>">
                             <span>Quero credenciar minha empresa</span>
                         </a>
                     </div>
@@ -203,7 +217,7 @@
             </div>
         </section>
         <section id="call_to_action" class="container d-flex align-content-center justify-content-center">
-            <a class="btn align-center" href="#">
+            <a class="btn align-center" href="<?= $link; ?>">
                 <span>Quero crendenciar minha empresa</span>
             </a>
         </section>
