@@ -16,6 +16,7 @@
 }
 
 :root {
+    color-scheme: only light;
     --main-font: "Poppins", sans-serif;
     --title-font: "Metropolis-SemiBold", "DM Sans", sans-serif;
     --button-font: "Roboto", sans-serif;
