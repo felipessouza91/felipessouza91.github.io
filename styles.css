@@ -16,7 +16,7 @@
 }
 
 :root {
-    color-scheme: only light;
+    color-scheme: light !important;
     --main-font: "Poppins", sans-serif;
     --title-font: "Metropolis-SemiBold", "DM Sans", sans-serif;
     --button-font: "Roboto", sans-serif;
@@ -43,7 +43,7 @@ body {
 }
 
 .font-medium {
-    font-size: 2rem !important;
+    font-size: 2.1rem !important;
 }
 
 .title {
@@ -137,7 +137,7 @@ body {
 }
 
 #about_us {
-    margin: 5vh auto;
+    margin: 20vh auto;
 }
 
 #about_us .logo {
@@ -157,12 +157,12 @@ body {
 }
 
 #about_us .title {
-    margin: 1rem 0;
+    margin: 5rem 0 1rem;
 }
 
 #about_us .content {
     font-family: var(--main-font);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 200;
 }
 
@@ -177,7 +177,7 @@ body {
 }
 
 #advantages {
-    margin: 10vh auto;
+    margin: 15vh auto;
     padding: 10vh 0;
     background-color: #FCFCFC;
     overflow: hidden;
@@ -205,10 +205,11 @@ body {
     font-family: var(--title-font);
     font-weight: 500 !important;
     color: var(--title-color);
-    font-size: 1.1rem;
+    font-size: 1.6rem;
 }
 
 #advantages .card-text {
+    font-size: 1.4rem;
     font-family: var(--main-font);
     font-weight: 200;
 }
