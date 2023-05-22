@@ -60,24 +60,21 @@ body {
 
 #hero {
     min-height: 100vh !important;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     overflow: hidden;
     margin: 0 !important;
     position: relative;
 }
 
 #hero__video {
-    width: auto;
-    height: 60vh;
+    width: 640px;
+    height: 360px;
+    margin: 1vh auto;
     position: relative;
     z-index: 9999;
-    margin: 1vh auto;
 }
 
 #hero__text {
-    margin-bottom: 3vh;
+    margin: 3vh auto;
     position: relative;
 }
 
@@ -99,6 +96,10 @@ body {
 .btn:hover {
     background-color: #7d53cc!important;
     color: #FFF;
+}
+
+#hero__btn {
+    margin: 4vh auto;
 }
 
 .slide {
@@ -218,12 +219,6 @@ body {
     margin: 5vh auto;
 }
 
-@media only screen and (width: 1024px) {
-    #hero__video {
-        height: 50vh;
-    }
-}
-
 @media only screen and (width: 915px) {
     .font-large {
         font-size: 2.1rem !important;
@@ -231,10 +226,6 @@ body {
 
     .font-medium {
         font-size: 1.4rem !important;
-    }
-    
-    #hero__video {
-        height: 100vh;
     }
 
 }
@@ -247,20 +238,6 @@ body {
 
     .font-medium {
         font-size: 1.8rem !important;
-    }
-
-    #hero {
-        align-items: center;
-        text-align: center;
-    }
-    
-    #hero__video {
-        height: 45vh;
-        width: 100%;
-    }
-
-    #hero__text {
-        padding: 1.3rem;
     }
 
     #about_us .content {
@@ -281,5 +258,6 @@ body {
 
     #hero__video {
         height: 30vh;
+        width: 100%;
     }   
 }
